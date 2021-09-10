@@ -1,8 +1,4 @@
-* {
-    box-sizing: border-box;
-}
-
-* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -63,122 +59,154 @@ body {
     width: 1000px;
     margin: 0 auto;
     background-color: #fff;
+
+   
 }
 header {
-
-    height: 300px;
     width: 500px;
-    margin: auto;
+    height: 200px;
     padding-top: 50px;
     text-align: center;
+    margin: auto;
 }
-
 header p {
-    text-transform: uppercase;
+    text-transform:uppercase ;
     font-style: normal;
     letter-spacing: .2em;
 }
-
-header nav ul li {
+header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    border-bottom: 2px solid #333 ;
+    border-top: 2px solid #333 ;
+}
+ header nav ul li { 
     display: inline-block;
 }
-
-header nav ul li a {
+header nav li a {
     text-decoration: none;
+    font-style: italic;
+    font-size: 1.2em;
+    color: rgb(5, 5, 5);
 }
-
-header nav ul li a :hover {
+header nav li a:hover {
     text-decoration: none;
-    font-weight: bold;
+ font-weight: bold;
     font-style: italic;
 }
-header h1 {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    font-size: 2.5em;
-    letter-spacing: .3em;
-}
-
-/* les titres et les p */
-h2 {
-    border-bottom: 2px solid #000;
-    padding-bottom: 15px;
-    font-size: 1.7em;
-    text-transform: uppercase;
-    letter-spacing: .4em;
-}
-
-p {
-    font-style: italic;
-    font-size: 1.1em;
-    padding-top: 16px;
-}
-
-.note {
-    width: 50%;
-    margin-top: 5px;
-    background: rgba(218, 218, 218, 0.623);
-    border-radius: 15px;
-    padding: 0 0 15px 10px;
-    text-transform: uppercase;
-}
+ /* les titres el les p  */
+ h2 {
+     border-bottom: 2px solid #333;
+     padding-bottom: 15px;
+     font-size: 1.7em;
+     text-transform: uppercase;
+     letter-spacing: .4em;
+ }
+ p {
+     font-style: italic;
+     font-size: 1.1em;
+     padding-top: 16px;
+ }
+ .note {
+     width: 50%;
+     margin-top: 5px;
+     background-color: rgba(218,218, 218, 0.623);
+     border-radius: 15px;
+     padding: 0 015px 10px;
+     text-transform: uppercase;
+ }
 footer {
-    height: 300px;;
+    height: 350px;
+    padding-bottom: 100px;
     text-align: center;
 }
-.sous-section {
+
+footer h2 {
     width: 500px;
-    height: 500px; 
+    margin: auto;
+    padding: 0;
+    line-height: 45px;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+
+    letter-spacing: .5em;
+    line-height: 50px;
+}
+.sous-section {
+    /* background: grey; */
+    width: 500px;
+    height: 500px;
     float: left;
     padding: 150px 15px 0 15px;
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
-
-/* style assiette */
-
-#assiette .texte-assiette {
+/* le style pour la section avec l'assiette */
+.img_assiette {
+    background: url("../img/assiette.png") no-repeat;
+    /* background-color: aquamarine; */
+    background-position: center;
+    background-size: 80%;
+}
+/* l'autre les images */
+#assiette .text-assiette {
     text-align: right;
     padding-right: 200px;
 }
-
 #assiette h2 {
     margin-top: 60px;
-    text-transform: none;
+    text-transform:none ;
     font-style: italic;
     letter-spacing: normal;
-    border: none;
+    border:none;
     padding: 0;
 }
-
 #assiette hr {
     position: relative;
     left: -225px;
+    width: 510px;
+    z-index: 2;
+}
+#assiette p {
+        text-transform: uppercase;
+        font-style: normal;
+        text-align: right;
+        padding-top: 0;
+    }
+    
+address {
+    margin-top: 50px;
+    font-family: serif;
+    font-size: smaller;
+    text-transform: uppercase;
+}  
 
+footer figcaption {
+    position: relative;
+
+    bottom: 100px;
+    font-weight: bold;
 }
 
-.img-assiette {
-    background: url("../img/assiette.png")no-repeat;
-    object-position: 50% 50%;
-}
 
-.img-resto-01 {
-    background: url("../img/resto_01_grande.jpg");
+.resto_01 {
+    background-image: url("../img/resto_01_grande.jpg");
+    /* si l'image est plus grande que l'élement une solution por caler comme il faut  */
     background-position: center;
     background-size: cover;
-}
+   
+    /* object-position: centre les images; */
 
-.img-resto-02 {
-    background: url("../img/resto_02.jpg");
-    object-position: 50% 50%;
 }
-
-.img-resto-03 {
-    background: url("../img/resto_03.jpg");
-    object-position: 50% 50%;
+.resto_02 {
+    background: url("../img/resto_02.jpg")no-repeat;
+    object-position: 50%,50%;
 }
-
-.img-resto-04 {
-    background: url("../img/resto_04.jpg");
-    object-position: 50% 50%;
+.resto_03 {
+    background: url("../img/resto_03.jpg")no-repeat;
+    object-position: 50%,50%;
 }
-
+.resto_04 {
+    background: url("../img/resto_04.jpg")no-repeat;
+    object-position: 50%,50%;
+}
